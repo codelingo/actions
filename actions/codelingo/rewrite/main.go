@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/codelingo/codelingo/flows/codelingo/rewrite/rewrite"
+	"github.com/codelingo/actions/actions/codelingo/rewrite/rewrite"
 
 	flowutil "github.com/codelingo/codelingo/sdk/flow"
 	"github.com/codelingo/lingo/app/util"

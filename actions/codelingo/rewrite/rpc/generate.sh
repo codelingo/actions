@@ -16,4 +16,4 @@
 # you need to add `interceptor grpc.UnaryServerInterceptor` as the last param of _Query_Query_Handler func sig.
 
 # go
-protoc $GOPATH/src/github.com/codelingo/codelingo/flows/codelingo/rewrite/rpc/rewrite.proto -I=$GOPATH/src --go_out=plugins=grpc:$GOPATH/src
+protoc $GOPATH/src/github.com/codelingo/actions/actions/codelingo/rewrite/rpc/rewrite.proto -I=$GOPATH/src --go_out=plugins=grpc:$GOPATH/src

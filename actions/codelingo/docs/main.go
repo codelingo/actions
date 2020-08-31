@@ -7,9 +7,9 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/codelingo/codelingo/flows/codelingo/docs/docs"
-	"github.com/codelingo/codelingo/flows/codelingo/docs/docs/parse"
-	"github.com/codelingo/codelingo/flows/codelingo/docs/render"
+	"github.com/codelingo/actions/actions/codelingo/docs/docs"
+	"github.com/codelingo/actions/actions/codelingo/docs/docs/parse"
+	"github.com/codelingo/actions/actions/codelingo/docs/render"
 	flowutil "github.com/codelingo/codelingo/sdk/flow"
 	"github.com/codelingo/lingo/app/util"
 	"github.com/juju/errors"

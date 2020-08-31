@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	flowutil "github.com/codelingo/codelingo/sdk/flow"
+	flowutil "github.com/codelingo/actions/sdk/flow"
 	"github.com/codelingo/lingo/app/commands/verify"
 	"github.com/codelingo/lingo/app/util"
 	"github.com/codelingo/lingo/app/util/common/config"

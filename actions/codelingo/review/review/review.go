@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	flowutil "github.com/codelingo/codelingo/sdk/flow"
+	flowutil "github.com/codelingo/actions/sdk/flow"
 	"github.com/codelingo/lingo/app/util"
 	grpcclient "github.com/codelingo/lingo/service/grpc"
 	"github.com/codelingo/rpc/flow"
