@@ -9,8 +9,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/codelingo/codelingo/flows/codelingo/rewrite/rewrite/option"
-	rewriterpc "github.com/codelingo/codelingo/flows/codelingo/rewrite/rpc"
+	"github.com/codelingo/actions/actions/codelingo/rewrite/rewrite/option"
+	rewriterpc "github.com/codelingo/actions/actions/codelingo/rewrite/rpc"
 	flowutil "github.com/codelingo/codelingo/sdk/flow"
 	"github.com/urfave/cli"
 

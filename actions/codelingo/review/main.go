@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/codelingo/codelingo/flows/codelingo/review/review"
-	flowutil "github.com/codelingo/codelingo/sdk/flow"
+	"github.com/codelingo/actions/actions/codelingo/review/review"
+	flowutil "github.com/codelingo/actions/sdk/flow"
 	"github.com/codelingo/lingo/app/util"
 	"github.com/codelingo/rpc/flow"
 	"github.com/juju/errors"

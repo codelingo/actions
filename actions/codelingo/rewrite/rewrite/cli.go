@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	rewriterpc "github.com/codelingo/codelingo/flows/codelingo/rewrite/rpc"
+	rewriterpc "github.com/codelingo/actions/actions/codelingo/rewrite/rpc"
 	"github.com/urfave/cli"
 
 	flowutil "github.com/codelingo/codelingo/sdk/flow"

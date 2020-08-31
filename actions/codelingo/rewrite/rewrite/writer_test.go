@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	rewriterpc "github.com/codelingo/codelingo/flows/codelingo/rewrite/rpc"
+	rewriterpc "github.com/codelingo/actions/actions/codelingo/rewrite/rpc"
 
 	flowutil "github.com/codelingo/codelingo/sdk/flow"
 	jc "github.com/juju/testing/checkers"
