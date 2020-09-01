@@ -11,7 +11,7 @@ fi
 owner="$1"
 name="$2"
 codelingoPath="$path/src/github.com/codelingo/actions"
-flowPath="$codelingoPath/flows/$owner/$name"
+flowPath="$codelingoPath/actions/$owner/$name"
 
 v="
 windows,amd64;\
