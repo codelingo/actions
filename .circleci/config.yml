@@ -2,10 +2,9 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/golang:1.10
-    working_directory: /go/src/github.com/codelingo/codelingo
+      - image: circleci/golang:1.14
+    working_directory: /go/src/github.com/codelingo/actions
     steps:
       - checkout
-      - run: go get -u github.com/golang/dep/cmd/dep
-      - run: dep ensure -v
-      - run: go test $(go list ./... 2>/dev/null  | grep -v /tenets/ | grep -v /vendor)
+      - run: go mod vendor
+      - run: go test $(go list ./... 2>/dev/null  | grep -v /vendor)
