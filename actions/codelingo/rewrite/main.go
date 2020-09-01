@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/codelingo/actions/actions/codelingo/rewrite/rewrite"
 
-	flowutil "github.com/codelingo/codelingo/sdk/flow"
+	flowutil "github.com/codelingo/actions/sdk/flow"
 	"github.com/codelingo/lingo/app/util"
 	"github.com/juju/errors"
 )

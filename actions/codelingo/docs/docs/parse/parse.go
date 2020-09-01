@@ -79,9 +79,9 @@ func resolveImports(parentQuery *dotlingo.Dotlingo) ([]*dotlingo.Dotlingo, error
 
 const github404 = "404: Not Found\n"
 
-const tenetURL = "https://raw.githubusercontent.com/codelingo/codelingo/master/tenets/%s/%s/%s/codelingo.yaml"
+const tenetURL = "https://raw.githubusercontent.com/codelingo/rules/master/rules/%s/%s/%s/codelingo.yaml"
 
-// Request a DotLingo from the github.com/codelingo/codelingo repo
+// Request a DotLingo from the github.com/codelingo/rules repo
 func requestDotLingo(owner, bundle, name string) (string, error) {
 	resp, err := http.Get(fmt.Sprintf(tenetURL, owner, bundle, name))
 	if err != nil {
@@ -94,20 +94,20 @@ func requestDotLingo(owner, bundle, name string) (string, error) {
 		return "", errors.Trace(err)
 	}
 	if string(body) == github404 {
-		return "", errors.Errorf("%s there's no tenet called \"%s\" at github.com/codelingo/codelingo/tenets/%s/%s", github404, name, owner, bundle)
+		return "", errors.Errorf("%s there's no tenet called \"%s\" at github.com/codelingo/rules/rules/%s/%s", github404, name, owner, bundle)
 	}
 
 	return string(body), nil
 }
 
-const bundleURL = "https://raw.githubusercontent.com/codelingo/codelingo/master/tenets/%s/%s/lingo_bundle.yaml"
+const bundleURL = "https://raw.githubusercontent.com/codelingo/rules/master/rules/%s/%s/lingo_bundle.yaml"
 
 type rawLingoBundle struct {
 	Tenets []string `yaml:"tenets"`
 	Tags   []string `yaml:"tags"`
 }
 
-// Requests a Tenet Bundle from the github.com/codelingo/codelingo repo
+// Requests a Tenet Bundle from the github.com/codelingo/rules repo
 func requestBundle(owner, bundleName string) (map[string]string, error) {
 	resp, err := http.Get(fmt.Sprintf(bundleURL, owner, bundleName))
 	if err != nil {
@@ -121,7 +121,7 @@ func requestBundle(owner, bundleName string) (map[string]string, error) {
 	}
 
 	if string(body) == github404 {
-		return nil, errors.Errorf("%s there's no lingo_bundle called \"%s\" at github.com/codelingo/codelingo/tenets/%s", github404, bundleName, owner)
+		return nil, errors.Errorf("%s there's no lingo_bundle called \"%s\" at github.com/codelingo/rules/rules/%s", github404, bundleName, owner)
 	}
 
 	var rawBun *rawLingoBundle

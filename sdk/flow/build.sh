@@ -10,7 +10,7 @@ fi
 
 owner="$1"
 name="$2"
-codelingoPath="$path/src/github.com/codelingo/codelingo"
+codelingoPath="$path/src/github.com/codelingo/actions"
 flowPath="$codelingoPath/flows/$owner/$name"
 
 v="

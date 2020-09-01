@@ -9,7 +9,7 @@ path="~/go"
 fi
 
 
-codelingoPath="$path/src/github.com/codelingo/codelingo"
+codelingoPath="$path/src/github.com/codelingo/actions"
 v="
 windows,amd64;\
 linux,amd64;\
