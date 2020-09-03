@@ -7,4 +7,4 @@ jobs:
     steps:
       - checkout
       - run: go mod vendor
-      - run: go test $(go list ./... 2>/dev/null  | grep -v /vendor)
+      - run: go test ./...
