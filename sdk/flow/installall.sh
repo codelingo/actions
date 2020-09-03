@@ -8,9 +8,9 @@ path="~/go"
 
 fi
 
-codelingoPath="$path/src/github.com/codelingo/codelingo"
+codelingoPath="$path/src/github.com/codelingo/actions"
 
-for flowPath in $codelingoPath/flows/*/ ; do
+for flowPath in $codelingoPath/actions/*/ ; do
 	for d in $flowPath*/ ; do
 
 		owner=$(echo $d | cut -d'/' -f 10)

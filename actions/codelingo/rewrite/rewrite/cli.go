@@ -7,7 +7,7 @@ import (
 	rewriterpc "github.com/codelingo/actions/actions/codelingo/rewrite/rpc"
 	"github.com/urfave/cli"
 
-	flowutil "github.com/codelingo/codelingo/sdk/flow"
+	flowutil "github.com/codelingo/actions/sdk/flow"
 	"github.com/codelingo/lingo/app/commands/verify"
 	"github.com/codelingo/lingo/app/util"
 	"github.com/codelingo/lingo/app/util/common/config"

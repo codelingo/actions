@@ -11,7 +11,7 @@ import (
 
 	"github.com/codelingo/actions/actions/codelingo/rewrite/rewrite/option"
 	rewriterpc "github.com/codelingo/actions/actions/codelingo/rewrite/rpc"
-	flowutil "github.com/codelingo/codelingo/sdk/flow"
+	flowutil "github.com/codelingo/actions/sdk/flow"
 	"github.com/urfave/cli"
 
 	"github.com/juju/errors"

@@ -6,7 +6,7 @@ import (
 	"github.com/urfave/cli"
 
 	rewriterpc "github.com/codelingo/actions/actions/codelingo/rewrite/rpc"
-	flowutil "github.com/codelingo/codelingo/sdk/flow"
+	flowutil "github.com/codelingo/actions/sdk/flow"
 	"github.com/fatih/color"
 	"github.com/golang/protobuf/proto"
 )
